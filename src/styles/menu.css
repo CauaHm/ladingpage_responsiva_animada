@@ -42,9 +42,41 @@
     right: -10px;
     top: -10px;
     border-radius: 0px 37.5px 0px 42.5px;
+    transition: color .3s ease;
+    cursor: pointer;
+}
 
+.dish-heart-active {
+    color: red;
 }
 
 .dish-description {
-    
+    color: #434343;
+}
+
+.dish-rate i {
+    color: #e9a209;
+}
+
+.dish-price {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (max-width: 1119px) {
+    .dishes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dish {
+        width: calc(50% - 18px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .dish {
+        width: 100%;
+    }
 }
